@@ -1,32 +1,7 @@
-.emtshW {
-  width: 100%;
-  max-width: 1066px;
-  margin: 0px auto;
-}
-
-.styles_Fetched__96N_u {
-  position: relative;
-  padding-top: 0.8rem;
-  width: 100%;
-}
-
-* {
-  box-sizing: inherit;
-}
-
-.styles_RichText__zr5DC.styles_isRoot__Ezf_u {
-  padding: 2.4rem 0;
-}
-
-.styles_RichText__zr5DC {
-  padding: 2.4rem;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-.styles_RichText__zr5DC .styles_p__0H_q7 {
-  min-height: 1.8rem;
+.mBox {
+  width: 1020px;
+  padding: 10px;
+  border: 2px solid grey;
+  margin-left: 20em;
+  padding: 1em;
 }
