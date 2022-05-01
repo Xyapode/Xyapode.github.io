@@ -1,0 +1,40 @@
+.mainFooter {
+  background-color: #161b25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 100%;
+}
+
+.mainFooter ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mainFooter li {
+  color: #fff;
+  cursor: pointer;
+  display: inline;
+  border-style: solid;
+  border-color: rgb(54, 133, 181);
+  border-image: initial;
+  border-width: 0px 0px 0px 1px;
+}
+
+.mainFooter a {
+  display: inline-block;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #3685b5;
+}
+
+nav {
+  display: block;
+}
+
+.hoho:hover {
+  text-decoration: underline;
+}
