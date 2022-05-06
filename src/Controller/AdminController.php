@@ -9,6 +9,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
@@ -38,7 +39,29 @@ class AdminController extends AbstractController
         $form = $this->createForm(ProduitFormType::class, $produit)->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
+
+            $produit->setAlias($slugger->slug($produit->getTitle() ) );
+
             $file = $form->get('photo')->getData();
+
+            if($file) { 
+
+                $extension = '.' . $file->guessExtension();
+
+                $safeFilename = $produit->getAlias();
+
+                $newFilename = $safeFilename . '_' . uniqid() . $extension;
+
+                try {
+
+                    $file->move($this->getParameter('uploads_dir'), $newFilename);
+
+                    $produit->setPhoto($newFilename);
+
+                } catch (FileException $exception) {
+                    
+                }
+            }
             
             $entityManager->persist($produit);
             $entityManager->flush();

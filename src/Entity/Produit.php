@@ -23,6 +23,11 @@ class Produit
     private $title;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $alias;
+
+    /**
      * @ORM\Column(type="text")
      */
     private $content;
@@ -50,6 +55,18 @@ class Produit
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getAlias(): ?string
+    {
+        return $this->alias;
+    }
+
+    public function setAlias(string $alias): self
+    {
+        $this->alias = $alias;
 
         return $this;
     }

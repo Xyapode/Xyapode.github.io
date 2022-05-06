@@ -5,4 +5,16 @@ body {
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
+}
+
+.img-card-custom {
+  object-fit: cover;
+  width: 18rem;
+  height: 200px;
+}
+
+.img-custom {
+  height: 600px;
+  object-fit: cover;
 }
