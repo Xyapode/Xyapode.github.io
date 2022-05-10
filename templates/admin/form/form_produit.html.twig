@@ -2,24 +2,23 @@
 
 {% block body %}
 
-    <div class="row">
-        <div class="col-8 mx-auto">
-            {{ form_start(form, {'attr': {novalidate: 'novalidate'}} ) }}
+    <div class="fo">
+        <form action="/tableau-de-bord">
+            <label for="fname">Nom du produit</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nom du produit...">
 
-                <div class="mb-3">
-                    {{ form_row(form.title) }}
-                </div>
+            <label for="lname">Description</label>
+            <input type="text" id="lname" name="lastname" placeholder="Description...">
 
-                <div class="mb-3">
-                    {{ form_row(form.content) }}
-                </div>
+            <label for="lname">Prix</label>
+            <input type="number" id="lname" name="lastname" placeholder="Prix...">
 
-                <div class="mb-3">
-                    {{ form_row(form.photo) }}
-                </div>
+            <label for="image">Choisir une image</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg">
 
-                <button type="submit" class="d-block col-2 mx-auto btn btn-warning mb-3">Publier</button>
-        </div>    
+
+            <input type="submit" value="Ajouter">
+        </form>
     </div>
 
 {% endblock %}

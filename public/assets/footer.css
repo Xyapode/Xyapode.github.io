@@ -3,9 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
   width: 100%;
   font-size: 1rem;
+  height: 50px;
+  margin-top: -50px;
 }
 
 .mainFooter ul {

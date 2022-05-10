@@ -1,50 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
-.container {
+.container1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  padding-bottom: 50px;
 }
 
-.container .card {
+.container1 .card {
   position: relative;
   min-width: 520px;
   height: 540px;
-  /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
-  border-radius: 15px;
   margin: 50px;
   transition: 0.5s;
 }
 
-.container .card:nth-child(1) .box .content a {
+.container1 .card:nth-child(1) .box .content a {
   background: #2196f3;
 }
 
-.container .card:nth-child(2) .box .content a {
+.container1 .card:nth-child(2) .box .content a {
   background: #e91e63;
 }
 
-.container .card:nth-child(3) .box .content a {
+.container1 .card:nth-child(3) .box .content a {
   background: #23c186;
 }
 
-.container .card:nth-child(4) .box .content a {
+.container1 .card:nth-child(4) .box .content a {
   background: #2196f3;
 }
 
-.container .card:nth-child(5) .box .content a {
+.container1 .card:nth-child(5) .box .content a {
   background: #e91e63;
 }
 
-.container .card:nth-child(6) .box .content a {
+.container1 .card:nth-child(6) .box .content a {
   background: #23c186;
 }
 
-.container .card .box {
+.container1 .card .box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -59,11 +58,11 @@
   transition: 0.5s;
 }
 
-.container .card .box:hover {
+.container1 .card .box:hover {
   transform: translateY(-50px);
 }
 
-.container .card .box:before {
+.container1 .card .box:before {
   content: "";
   position: absolute;
   top: 0;
@@ -73,12 +72,12 @@
   background: rgba(255, 255, 255, 0.03);
 }
 
-.container .card .box .content {
+.container1 .card .box .content {
   padding: 20px;
   text-align: center;
 }
 
-.container .card .box .content h3 {
+.container1 .card .box .content h3 {
   position: absolute;
   font-size: 1.8rem;
   color: #fff;
@@ -87,7 +86,7 @@
   right: 35%;
 }
 
-.container .card .box .content p {
+.container1 .card .box .content p {
   position: absolute;
   right: 14px;
   text-align: center;
@@ -98,20 +97,20 @@
   bottom: 50px;
 }
 
-.container .card .box .content a {
+.container1 .card .box .content a {
   position: absolute;
   display: inline;
   padding: 8px 20px;
   background: black;
-  border-radius: 5px;
   text-decoration: none;
   color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
   bottom: 10px;
   right: 39%;
+  border-radius: 10px;
 }
-.container .card .box .content a:hover {
+.container1 .card .box .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
   color: #000;
